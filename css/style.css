@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
   }
 
 h1, h2{
@@ -50,34 +51,6 @@ body {
     background: #11582C;
     color: white;
 }
-.hero-desc {
-    display: flex;
-    flex-direction: column;
-
-    /* padding: 5rem; */
-    text-align: left;
-
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-desc button {
-    width: fit-content;
-}
-
-.hero-ills {
-    display: flex;
-
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    width: 100%;
-    height: 100%;
-
-    margin-top: auto;
-    margin-left: 1rem;
-}
-
 
 .hero , .service, .usp, .testi, .faq, .footer{
     padding-top: 10%;
@@ -103,6 +76,7 @@ body {
 
 .footer .sosmed-icon{
     margin-right: 5%;
+    width:32px;
 }
 
 .owl-item .row {
@@ -156,10 +130,14 @@ body {
 }
 @media screen and (max-width: 430px) {
     nav{
-        padding-left: 0px;
+        padding-right: 0px;
+
     }
     .hero , .service, .usp, .testi{
         padding-top: 15%;
+    }
+    .hero, .service{
+        padding-right: 0px;
     }
     .hero .hero-gambar{
         padding-top: 5%;
@@ -188,5 +166,8 @@ body {
     #user{
         width: 40%;
     }
-    
+    .footer .sosmed-icon{
+        width: 20px;
+        margin-right: 5px;
+    }
 }
